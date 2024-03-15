@@ -22,10 +22,12 @@ function calcularInvestimento() {
     ];
 
     const resultadoDiv = document.getElementById('resultado');
-    resultadoDiv.innerHTML = `<p>O valor final do investimento é R$${jurosCompostos}.</p>`;
+    resultadoDiv.innerHTML = `<span class="resultadoDiv">O valor final do investimento é R$${jurosCompostos}.</span>`;
 
-    for (const { marca, modelo, valor } of carros) {
-        resultadoDiv.innerHTML += `<p>${valor < jurosCompostos ? 'Consegue' : 'Não consegue'} comprar o carro ${marca} ${modelo} que custa R$${valor}.</p>`;
+    for (let i = 0; i < carros.length; i++) {
+        const { marca, modelo, valor } = carros[i];
+        const frase = `${valor < jurosCompostos ? 'Consegue' : 'Não consegue'} comprar o carro ${marca} ${modelo} que custa R$${valor}.`;
+        resultadoDiv.innerHTML += `<p><span class="car-icon"></span>${frase}</p>`;
     }
 }
 
