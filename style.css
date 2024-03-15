@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Cinza claro */
+    color: #333; /* Cor do texto */
+}
+
+h2 {
+    color: #6930c3; /* Roxo escuro */
+}
+
+form {
+    background-color: #d3e0ea; /* Verde claro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="number"] {
+    width: 25ch;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #6930c3; /* Roxo escuro */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5e2d96; /* Roxo mais escuro */
+}
+
+#limpar {
+    padding: 10px 20px;
+    background-color: #9e93b0; /* Roxo escuro */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#limpar:hover {
+    background-color: #726883; /* Roxo mais escuro */
+}
+
+#resultado {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff; /* Branco */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+#resultado p {
+    margin-bottom: 10px;
+}
